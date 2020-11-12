@@ -11,6 +11,7 @@ django = "*"
 pylint-django = "*"
 psycopg2 = "*"
 gunicorn = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.8"
