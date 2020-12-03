@@ -162,4 +162,4 @@ def login(request):
         return Response({'error': 'Invalid Credentials'}, status=status.HTTP_404_NOT_FOUND)
         
     token, _ = Token.objects.get_or_create(user=user)
-    return Response({"id": user.id, 'token': token.key}, status=status.HTTP_200_OK)
+    return Response({"username": user.username, "id": user.id, 'token': token.key}, status=status.HTTP_200_OK)
